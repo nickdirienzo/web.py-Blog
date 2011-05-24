@@ -1,13 +1,22 @@
 $def with (postTitles, postDates, postContents)
-
+<!-- 	
+Author: Nick DiRienzo
+Began On: 05.23.2011
+-->
 <html>
 	<head>
 		<title>Blog</title>
+		<link rel="stylesheet" type="text/css" href="../static/main.css" />
 	</head>
 	<body>
-		$for i in xrange(len(postTitles)):
-			<div id='post-title'>Title: $postTitles[i]</div>
-			<div id='post-date'>Posted On: $postDates[i]</div>
-			<div id='post-content'>Content: $postContents[i]</div>
+		<div id='header'>
+			BLOG
+		</div>
+		<div id='post-wrapper'>
+			$for i in xrange(len(postTitles)):
+				<div id='post-title'>$postTitles[i]<span id='post-date'>Posted On $postDates[i]</span></div>		
+				<div id='post-content'>$:postContents[i]</div>
+				<br />
+		</div>
 	</body>
 </html>
