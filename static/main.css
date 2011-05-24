@@ -9,12 +9,13 @@ body {
 
 #header {
 	font-family: 'Times New Roman', Times, sans;
-	margin: 10px auto;
-	padding: 12px;
+	margin: 12px auto;
+	padding: 3px 12px;
 	width: 75%;
 	border-bottom: 1px solid black;
 	font-size: 36px;
 	font-weight: bold;
+	color: black;
 }
 
 #post-wrapper {
@@ -26,19 +27,29 @@ body {
 	width: 75%;
 }
 
-#post-title {
+.post-title {
 	font-family: 'Times New Roman', Times, sans;
 	border-bottom: 1px solid white;
 	font-size: 24px;
 }
 
-#post-date {
+.post-title a {
+	color: white;
+	text-decoration: none;
+}
+
+.post-title a:hover {
+	color: #E76021;
+	text-decoration: none;
+}
+
+.post-date {
 	font-family: 'Times New Roman', Times, sans;
 	font-style: italic;
 	font-size: 15px;
 	padding: 5px;
 }
 
-#post-content {
+.post-content {
 	padding: 12px;
 }

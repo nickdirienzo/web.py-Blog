@@ -6,7 +6,9 @@ Began On: 05.23.2011
 <html>
 	<head>
 		<title>Blog</title>
-		<link rel="stylesheet" type="text/css" href="../static/main.css" />
+		<link rel='stylesheet' type='text/css' href='../static/main.css' />
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js'></script>
+		<script type='text/javascript' src='../static/functions.js'></script>			
 	</head>
 	<body>
 		<div id='header'>
@@ -14,8 +16,8 @@ Began On: 05.23.2011
 		</div>
 		<div id='post-wrapper'>
 			$for i in xrange(len(postTitles)):
-				<div id='post-title'>$postTitles[i]<span id='post-date'>Posted On $postDates[i]</span></div>		
-				<div id='post-content'>$:postContents[i]</div>
+				<div class='post-title' id='post-title-$i'><a href=''>$postTitles[i]</a><span class='post-date' id='post-date-$i'>posted on <a href=''>$postDates[i]</a></span></div>		
+				<div class='post-content' id='post-content-$i'>$:postContents[i]</div>
 				<br />
 		</div>
 	</body>
