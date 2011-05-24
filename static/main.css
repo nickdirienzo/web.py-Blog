@@ -1,0 +1,44 @@
+/* Author: Nick DiRienzo
+ * Began On: 05.23.2011
+ */
+body {
+	background-color: white;
+	text-align: center;
+	font-family: 'Arial', Arial, sans-serif;
+}
+
+#header {
+	font-family: 'Times New Roman', Times, sans;
+	margin: 10px auto;
+	padding: 12px;
+	width: 75%;
+	border-bottom: 1px solid black;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+#post-wrapper {
+	text-align: left;
+	margin: 0px auto;
+	padding: 12px;
+	background-color: black;
+	color: white;
+	width: 75%;
+}
+
+#post-title {
+	font-family: 'Times New Roman', Times, sans;
+	border-bottom: 1px solid white;
+	font-size: 24px;
+}
+
+#post-date {
+	font-family: 'Times New Roman', Times, sans;
+	font-style: italic;
+	font-size: 15px;
+	padding: 5px;
+}
+
+#post-content {
+	padding: 12px;
+}
