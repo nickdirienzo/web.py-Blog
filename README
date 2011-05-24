@@ -1,0 +1,3 @@
+05.23.2011: 	Began developing blogging platform using web.py. 
+		For now, uses a hacked-together text file to store post info.
+		Nothing fancy yet; just a way to learn web.py.
