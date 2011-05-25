@@ -32,14 +32,19 @@ class blog:
 		for i in xrange(2, len(postsFromFile), 3): #gets the content of each post
 			postsFromFile[i] = postsFromFile[i].replace('\\n', '<br /><br />') #converts "newlines" to two HTML breaks
 			postContents.append(postsFromFile[i])
+			
+		postId = web.input(id=None)
+		if postId.id == None:
+			return render.blog(postTitles, postDates, postContents, None)
+		elif int(postId.id) >= 0:
+			return render.blog(postTitles, postDates, postContents, int(postId.id))
 		
-		return render.blog(postTitles, postDates, postContents)
 		
 	#Converts number of month to name of month
 	def getMonthName(self, monthNum):
 		months = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
 		'August', 'September', 'October', 'November', 'December']
 		return months[monthNum-1]
-		
+	
 if __name__ == '__main__':
 	app.run()
