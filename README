@@ -2,5 +2,5 @@
 		For now, uses a hacked-together text file to store post info.
 		Nothing fancy yet; just a way to learn web.py.
 
-0.24.2011:	Added CSS. Added content hide/show using jQuery.
+05.24.2011:	Added CSS. Added content hide/show using jQuery.
 		Added function to view individual posts.
