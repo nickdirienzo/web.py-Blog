@@ -1,0 +1,57 @@
+/* Author: Nick DiRienzo
+ * Began On: 05.25.2011
+ */
+#post-wrapper {
+	text-align: left;
+	margin: 0px auto;
+	padding: 12px;
+	background-color: black;
+	color: white;
+	width: 75%;
+}
+
+.post-title {
+	text-transform: uppercase;
+	border-bottom: 1px solid white;
+	font-size: 24px;
+}
+
+.post-title a {
+	color: white;
+	text-decoration: none;
+}
+
+.post-title a:hover {
+	color: #E76021;
+	text-decoration: none;
+}
+
+.post-date {
+	text-transform: none;
+	font-style: italic;
+	font-size: 15px;
+	padding: 5px;
+}
+
+.post-content {
+	font-family: 'Arial', Arial, sans-serif;
+	padding: 12px;
+	display: none;
+}
+
+.post-content a {
+	color: #E76021;
+	text-decoration: none;
+}
+
+.post-content a:hover {
+	text-decoration: underline;
+}
+
+.toggle-content {
+	text-transform: none;
+	float: right;
+	font-style: italic;
+	font-size: 15px;
+	padding: 9px;
+}

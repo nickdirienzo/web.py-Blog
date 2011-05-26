@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	var postId = 0;
 	$('.toggle-content ').toggle(function() {
-		postId = parseInt($(this).attr('id').charAt($(this).attr('id').length-1));
+		postId = parseInt($(this).attr('id').charAt($(this).attr('id').length-1)); //obviously this is a bug, need to regex this or something
 		if((postId == $('.post-title').length-1) || ($('.post-title').length-1 == 0)) {
 			$('#post-content-'+postId).hide('fast');
 			$('#toggle-content-'+postId).text('Show Post Content');

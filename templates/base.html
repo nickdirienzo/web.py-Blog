@@ -1,0 +1,26 @@
+$def with (content)
+<!-- 	
+Author: Nick DiRienzo
+Began On: 05.25.2011
+-->
+<html>
+	<html>
+	<head>
+		<title>
+			$content.title
+		</title>
+		<link rel='stylesheet' type='text/css' href='../static/stylesheets/base.css' />
+		<link rel='stylesheet' type='text/css' href='../static/stylesheets/$content.css' />
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js'></script>
+		<script type='text/javascript' src='../static/functions.js'></script>			
+	</head>
+	<body>
+		<div id='header'>
+			<a href='/$content.header'>$content.header</a>
+		</div>
+		$:content
+		<div id='footer'>
+			<a href='/blog'>Blog</a> | <a href='/blog/new'>Create New Post</a>
+		</div>
+	</body>
+</html>

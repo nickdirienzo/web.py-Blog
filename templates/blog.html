@@ -1,26 +1,15 @@
 $def with (postTitles, postDates, postContents, postId)
-<!-- 	
-Author: Nick DiRienzo
-Began On: 05.23.2011
--->
-<html>
-	<head>
-		<title>
-			$if postId >= len(postTitles):
-				404
-			$elif postId != None:
-				BLOG: $postTitles[postId]
-			$else:
-				BLOG
-		</title>
-		<link rel='stylesheet' type='text/css' href='../static/main.css' />
-		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js'></script>
-		<script type='text/javascript' src='../static/functions.js'></script>			
-	</head>
-	<body>
-		<div id='header'>
-			<a href='./blog'>BLOG</a>
-		</div>
+
+$if postId >= len(postTitles):
+	$var title: 404
+$elif postId != None:
+	$var title: Blog: $postTitles[postId]
+$else:
+	$var title: Blog
+	
+$var header: blog
+$var css: blog.css
+
 		<div id='post-wrapper'>
 			$if postId >= len(postTitles):
 				404
@@ -37,8 +26,3 @@ Began On: 05.23.2011
 						<div class='post-content' id='post-content-$i'>$:postContents[i]</div>
 					<br />
 		</div>
-		<div id='footer'>
-			Go to: <a href='./blog'>Blog</a>
-		</div>
-	</body>
-</html>

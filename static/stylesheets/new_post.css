@@ -1,0 +1,25 @@
+/* Author: Nick DiRienzo
+ * Began On: 05.25.2011
+ */
+#new-post-wrapper {
+	font-family: 'Arial', Arial, sans-serif;
+	text-align: left;
+	margin: 0px auto;
+	padding: 12px;
+	background-color: black;
+	color: white;
+	width: 75%;
+}
+
+#new-post-wrapper a {
+	color: #E76021;
+	text-decoration: none;
+}
+
+#new-post-wrapper a:hover {
+	text-decoration: underline;
+}
+
+#new-post-form label {
+	color: white;
+}

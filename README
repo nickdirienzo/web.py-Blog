@@ -4,3 +4,8 @@
 
 05.24.2011:	Added CSS. Added content hide/show using jQuery.
 		Added function to view individual posts.
+
+05.25.2011:	Added new post function. 
+		Templated the pages.
+		Tried thinking of other ways to design the 'blog' class.
+		Bug in 'functions.js', only looks at last character. So unless I restrict the blog roll to a count of less than 9, it will have this bug. It's fixable though, but it's 1am, so I'm going to bed.
