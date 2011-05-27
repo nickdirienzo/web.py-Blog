@@ -27,6 +27,15 @@ body {
 	color: #E76021;
 }
 
+#wrapper {
+	text-align: left;
+	margin: 0px auto;
+	padding: 12px;
+	background-color: black;
+	color: white;
+	width: 75%;
+}
+
 #footer {
 	margin: 12px auto;
 	padding: 3px 12px;

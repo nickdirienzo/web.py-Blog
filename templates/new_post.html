@@ -2,15 +2,14 @@ $def with (newPostForm)
 
 $var title: New Post
 $var header: new post
+$var linkback: new
 $var css: new_post.css
 
-		<div id='new-post-wrapper'>
-			<div id='new-post-form'>
-				<form action='' method='POST'>
-					$if newPostForm == None:
-						<script type='text/javascript'>window.location = '/blog';</script>
-					$else:
-						$:newPostForm.render()
-				</form>
-			</div>
+		<div id='new-post-form'>
+			<form action='' method='POST'>
+				$if newPostForm == None:
+					<script type='text/javascript'>window.location = '/blog';</script>
+				$else:
+					$:newPostForm.render()
+			</form>
 		</div>

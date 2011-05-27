@@ -8,21 +8,20 @@ $else:
 	$var title: Blog
 	
 $var header: blog
+$var linkback: blog
 $var css: blog.css
 
-		<div id='post-wrapper'>
-			$if postId >= len(postTitles):
-				404
-			$elif postId != None:
-				<div class='post-title' id='post-title-$postId'><a href='./blog?id=$postId'>$postTitles[postId]</a><span class='post-date' id='post-date-$postId'>posted on <a href=''>$postDates[postId]</a></span><a href='' class='toggle-content' id='toggle-content-$postId'>Hide Post Content</a></div>		
-				<div class='post-content' id='post-content-$postId' style='display: block;'>$:postContents[postId]</div>
-			$else:
-				$for i in xrange(len(postTitles)-1, -1, -1):
-					$if i == len(postTitles)-1:
-						<div class='post-title' id='post-title-$i'><a href='./blog?id=$i'>$postTitles[i]</a><span class='post-date' id='post-date-$i'>posted on <a href=''>$postDates[i]</a></span><a href='' class='toggle-content' id='toggle-content-$i'>Hide Post Content</a></div>		
-						<div class='post-content' id='post-content-$i' style='display: block;'>$:postContents[i]</div>
-					$else:
-						<div class='post-title' id='post-title-$i'><a href='./blog?id=$i'>$postTitles[i]</a><span class='post-date' id='post-date-$i'>posted on <a href=''>$postDates[i]</a></span><a href='' class='toggle-content' id='toggle-content-$i'>Show Post Content</a></div>		
-						<div class='post-content' id='post-content-$i'>$:postContents[i]</div>
-					<br />
-		</div>
+		$if postId >= len(postTitles):
+			404
+		$elif postId != None:
+			<div class='post-title' id='post-title-$postId'><a href='./blog?id=$postId'>$postTitles[postId]</a><span class='post-date' id='post-date-$postId'>posted on <a href=''>$postDates[postId]</a></span><a href='' class='toggle-content' id='toggle-content-$postId'>Hide Post Content</a></div>		
+			<div class='post-content' id='post-content-$postId' style='display: block;'>$:postContents[postId]</div>
+		$else:
+			$for i in xrange(len(postTitles)-1, -1, -1):
+				$if i == len(postTitles)-1:
+					<div class='post-title' id='post-title-$i'><a href='./blog?id=$i'>$postTitles[i]</a><span class='post-date' id='post-date-$i'>posted on <a href=''>$postDates[i]</a></span><a href='' class='toggle-content' id='toggle-content-$i'>Hide Post Content</a></div>		
+					<div class='post-content' id='post-content-$i' style='display: block;'>$:postContents[i]</div>
+				$else:
+					<div class='post-title' id='post-title-$i'><a href='./blog?id=$i'>$postTitles[i]</a><span class='post-date' id='post-date-$i'>posted on <a href=''>$postDates[i]</a></span><a href='' class='toggle-content' id='toggle-content-$i'>Show Post Content</a></div>		
+					<div class='post-content' id='post-content-$i'>$:postContents[i]</div>
+				<br />

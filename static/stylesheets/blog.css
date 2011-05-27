@@ -1,15 +1,6 @@
 /* Author: Nick DiRienzo
  * Began On: 05.25.2011
  */
-#post-wrapper {
-	text-align: left;
-	margin: 0px auto;
-	padding: 12px;
-	background-color: black;
-	color: white;
-	width: 75%;
-}
-
 .post-title {
 	text-transform: uppercase;
 	border-bottom: 1px solid white;

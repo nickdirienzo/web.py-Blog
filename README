@@ -9,3 +9,7 @@
 		Templated the pages.
 		Tried thinking of other ways to design the 'blog' class.
 		Bug in 'functions.js', only looks at last character. So unless I restrict the blog roll to a count of less than 9, it will have this bug. It's fixable though, but it's 1am, so I'm going to bed.
+
+05.26.2011:	Fixed the bug in 'functions.js'
+
+05.27.2011:	Made stylesheets and pages more templated.
