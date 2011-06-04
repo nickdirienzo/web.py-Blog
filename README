@@ -1,15 +1,10 @@
-05.23.2011: 	Began developing blogging platform using web.py. 
-		For now, uses a hacked-together text file to store post info.
-		Nothing fancy yet; just a way to learn web.py.
+-- Web.Py Blog --
+A simple blogging platform written in Python, using Web.Py as the framework.
 
-05.24.2011:	Added CSS. Added content hide/show using jQuery.
-		Added function to view individual posts.
+-- Project Information --
+Author: Nick DiRienzo
+Project began on 05.22.2011
 
-05.25.2011:	Added new post function. 
-		Templated the pages.
-		Tried thinking of other ways to design the 'blog' class.
-		Bug in 'functions.js', only looks at last character. So unless I restrict the blog roll to a count of less than 9, it will have this bug. It's fixable though, but it's 1am, so I'm going to bed.
-
-05.26.2011:	Fixed the bug in 'functions.js'
-
-05.27.2011:	Made stylesheets and pages more templated.
+-- Requirements --
+Python: 2.7.1+ (but not Python 3+)
+Web.Py: 0.35
