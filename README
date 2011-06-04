@@ -1,5 +1,7 @@
 -- Web.Py Blog --
 A simple blogging platform written in Python, using Web.Py as the framework.
+This is far from complete, but it's a great way for me to learn Python and 
+Web.Py.
 
 -- Project Information --
 Author: Nick DiRienzo
@@ -8,3 +10,6 @@ Project began on 05.22.2011
 -- Requirements --
 Python: 2.7.1+ (but not Python 3+)
 Web.Py: 0.35
+
+-- Changes --
+See CHANGELOG for the status of the project. 
