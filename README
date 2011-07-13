@@ -1,8 +1,3 @@
-* Please Note *
-This project is stuck in its current phase because I am working on a game for
-the XO platform, Antarctic Algebra. The game is in its early stages of 
-development, but the code can be found at: github.com/antarcticalgebra
-
 -- Web.Py Blog --
 A simple blogging platform written in Python, using Web.Py as the framework.
 This is far from complete, but it's a great way for me to learn Python and 
